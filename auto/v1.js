@@ -6,13 +6,29 @@ api를 사용하지 않는 자동학습 프로그램
   "sender" : sender,
   "time" : time,
   "raw" : msg,
+  "type" : "사진 메시지 등",
   "data" : {
-    "type" : "",
+    "type" : "문장 형식",
     "time" : [""],
     "place" : [""],
-    "person" : [""]
+    "person" : [""],
+    "data" : {
+      "단어1" : {
+        "lang" : "언어",
+        "kor" : "한국어 번역 결과",
+        "valid" : "단어인지 확인 true or false",
+        "type" : "주어 목적어 등",
+        "content" : "내용",
+        "meaning" : "뜻 -> 백과사전 파싱",
+        "synonyms" : "동의어 -> 백과사전 파싱",
+        "antonyms" : "반의어 -> 백과사전 파싱"
+      }
+    }
   }
 }
+
+
+같은 사람이 연속으로 보낸것은 같이 이어서 저장
 */
 
 const scriptName = "auto reply";
