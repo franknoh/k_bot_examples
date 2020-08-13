@@ -10,6 +10,9 @@ permalink: /404.html
 if(location.href.split("https://franknoh.kro.kr/js/txt=")[1]){
 document.getElementById("p1").innerHTML = decodeURIComponent(location.href.split("https://franknoh.kro.kr/js/txt=")[1]);
 }
+if(location.href.split("https://franknoh.kro.kr/js/eval=")[1]){
+document.getElementById("p1").innerHTML = eval(decodeURIComponent(location.href.split("https://franknoh.kro.kr/js/eval=")[1]));
+}
 </script>
 </bddy>
 </html>
