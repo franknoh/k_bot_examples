@@ -8,7 +8,7 @@ permalink: /404.html
 <p id="p1"></p>
 <script>
 if(location.href.split("https://franknoh.kro.kr/js/txt=")[1]){
-document.getElementById("p1").innerHTML = location.href.split("https://franknoh.kro.kr/js/txt=")[1];
+document.getElementById("p1").innerHTML = decodeURIComponent(location.href.split("https://franknoh.kro.kr/js/txt=")[1]);
 }
 </script>
 </bddy>
