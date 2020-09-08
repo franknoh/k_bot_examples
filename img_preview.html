@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="kr"><head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://franknoh.kro.kr/">
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://franknoh.kro.kr/">
 </head>
+
 <body>
-	<script>
-  if(location.href.startsWith("https://franknoh.kro.kr/img_preview?img=")){
-    var link = document.createElement('meta');
-    link.setAttribute('property', 'og:image');
-    link.content = location.href.substring("https://franknoh.kro.kr/img_preview?img=".length);
-    document.getElementsByTagName('head')[0].appendChild(link);
-  }
-	</script>
+    <script>
+        if (decodeURIComponent(location.href).startsWith("https://franknoh.kro.kr/img_preview?img=")) {
+            var link = document.createElement('meta');
+            link.setAttribute('property', 'og:image');
+            link.content = decodeURIComponent(location.href).substring("https://franknoh.kro.kr/img_preview?img=".length);
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
 </body>
+
 </html>
